@@ -1,0 +1,39 @@
+{
+  "name": "gulp-lint-everything",
+  "version": "0.0.1",
+  "description": "Lint javascript sources using jshint, eslint, jscs, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/gulp-lint-everything.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "lint",
+    "jshint",
+    "eslint",
+    "jscs"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/gulp-lint-everything/issues"
+  },
+  "homepage": "https://github.com/bahmutov/gulp-lint-everything",
+  "dependencies": {
+    "bad-line": "0.1.0",
+    "cute-stack": "1.2.1",
+    "gulp": "3.8.11",
+    "gulp-eslint": "0.5.0",
+    "gulp-jscs": "1.4.0",
+    "gulp-jshint": "1.9.2",
+    "jshint-summary": "0.4.0"
+  },
+  "devDependencies": {
+    "eslint-rules": "0.4.3"
+  }
+}

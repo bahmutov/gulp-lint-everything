@@ -1,0 +1,39 @@
+{
+  // this is JSON file, but ESLint allows C-style comments
+
+  "env": {
+    "browser": true,
+    "node": true
+  },
+
+  // 0 - turn rule off
+  // 1 - rule generates warnings
+  // 2 - rule generates errors
+  "rules": {
+    "camelcase": 0,
+    "camel_case": 0,
+    "strict": 0,
+    "no-undef": 1,
+    "no-unused-vars": 1,
+    "no-underscore-dangle": 1,
+    "quotes": [2, "single"],
+    "brace-style": [2, "1tbs"],
+    "eol-last": 1,
+    "semi": [2, "always"],
+    "no-extra-strict": 0,
+    "no-single-line-objects": 2,
+    "no-nested-ternary": 1,
+    "no-space-before-semi": 1,
+    "no-shadow": 1,
+    "no-undef-init": 1,
+    "no-undefined": 0,
+    "no-sequences": 1,
+    "no-for-loops": 1,
+    "no-commented-out-code": 2,
+    // allow exceptions for some reserved keywards, others should use dot notation
+    "dot-notation": [2, {"allowPattern": "^(finally|catch)$"}]
+  },
+
+  "globals": {
+  }
+}
