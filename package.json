@@ -37,5 +37,5 @@
     "eslint-rules": "0.4.3",
     "pre-git": "0.1.1"
   },
-  "pre-commit": "gulp"
+  "pre-commit": ["gulp", "npm version"]
 }
