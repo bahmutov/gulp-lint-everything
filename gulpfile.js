@@ -5,6 +5,4 @@ var lintAll = require('./index')({
   eslintRulePaths: ['./node_modules/eslint-rules'],
   jscs: './configs/jscs.json'
 });
-var sources = '*.js';
-
 gulp.task('default', lintAll('*.js'));

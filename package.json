@@ -1,10 +1,10 @@
 {
   "name": "gulp-lint-everything",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Lint javascript sources using jshint, eslint, jscs, etc.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,8 @@
     "jshint-summary": "0.4.0"
   },
   "devDependencies": {
-    "eslint-rules": "0.4.3"
-  }
+    "eslint-rules": "0.4.3",
+    "pre-git": "0.1.1"
+  },
+  "pre-commit": "gulp"
 }

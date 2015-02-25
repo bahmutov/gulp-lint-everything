@@ -29,6 +29,8 @@ var lintAll = require('gulp-lint-everything')({
 gulp.task('default', lintAll('*.js'));
 ```
 
+If a config filename is not specified, that linter will be skipped.
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015

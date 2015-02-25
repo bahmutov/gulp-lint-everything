@@ -6,8 +6,8 @@ var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var jscs = require('gulp-jscs');
 
-function lintAll(options) {
-  var options = options || {};
+function lintAll(opts) {
+  var options = opts || {};
 
   return function linter(scripts) {
     if (!arguments.length) {
@@ -35,9 +35,7 @@ function lintAll(options) {
           configPath: options.jscs
         }));
     }
-    // runSequence(tasksToRun, callback);
-
-    return function (cb) {
+    return function () {
       return pipe;
     };
   };
