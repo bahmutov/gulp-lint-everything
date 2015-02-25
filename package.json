@@ -1,6 +1,6 @@
 {
   "name": "gulp-lint-everything",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lint javascript sources using jshint, eslint, jscs, etc.",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,11 @@
   },
   "devDependencies": {
     "eslint-rules": "0.4.3",
+    "gulp-size": "1.2.1",
     "pre-git": "0.1.1"
   },
-  "pre-commit": ["gulp", "npm version"]
+  "pre-commit": [
+    "gulp",
+    "npm version"
+  ]
 }
