@@ -1,6 +1,6 @@
 {
   "name": "gulp-lint-everything",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Lint javascript sources using jshint, eslint, jscs, etc.",
   "main": "index.js",
   "scripts": {
