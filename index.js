@@ -6,6 +6,7 @@ var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var jscs = require('gulp-jscs');
 var size = require('gulp-size');
+var path = require('path');
 
 var log = (function initLog(args) {
   var debugFlags = ['--verbose', '--debug', '-d'];
@@ -16,8 +17,20 @@ var log = (function initLog(args) {
   return isVerbose ? console.log.bind(console) : noop;
 }(process.argv));
 
+function findConfigFiles(folder) {
+  return {
+    jshint: path.join(folder, 'jshint.json'),
+    eslint: path.join(folder, 'eslint.json'),
+    jscs: path.join(folder, 'jscs.json')
+  };
+}
+
 function lintAll(opts) {
   var options = opts || {};
+
+  if (typeof opts === 'string' && opts) {
+    options = findConfigFiles(opts);
+  }
 
   return function linter(scripts) {
     if (!arguments.length) {

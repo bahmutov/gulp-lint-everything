@@ -1,0 +1,29 @@
+{
+  "requireSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "disallowSpacesInNamedFunctionExpression": {
+    "beforeOpeningRoundBrace": true
+  },
+  "disallowQuotedKeysInObjects": "allButReserved",
+  "disallowSpaceAfterObjectKeys": true,
+  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+  "disallowMultipleLineBreaks": true,
+  "disallowMultipleLineStrings": true,
+  "disallowTrailingComma": true,
+  "requireLineFeedAtFileEnd": true,
+  "safeContextKeyword": ["that", "me"],
+  "requireDotNotation": true,
+  "requireSpaceAfterLineComment": true,
+  "requireSpacesInsideObjectBrackets": "all",
+  "validateIndentation": 2,
+  "disallowKeywordsOnNewLine": ["else"],
+  "disallowMixedSpacesAndTabs": true,
+  "disallowTrailingComma": true,
+  "requireSpaceAfterKeywords": ["if", "while", "else"],
+  "disallowSpacesInsideParentheses": true,
+  "requireSpaceBeforeBinaryOperators": true,
+  "requireSpaceAfterBinaryOperators": true,
+  "requireSpaceBeforeObjectValues": true
+}

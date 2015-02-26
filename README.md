@@ -31,6 +31,15 @@ gulp.task('default', lintAll('*.js'));
 
 If a config filename is not specified, that linter will be skipped.
 
+## Finding config files
+
+If you pass a single string to the exported function, it will try to find the config files.
+Currently assumes the filenames `jshint.json`, `eslint.json` and `jscs.json`.
+
+```js
+var lintAll = require('gulp-lint-everything')(__dirname);
+```
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015
