@@ -1,6 +1,8 @@
-var cute = require('cute-stack');
-cute.ui.badLine = require('bad-line');
-cute('badLine');
+// TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them
+// var cute = require('cute-stack');
+// cute.ui.badLine = require('bad-line');
+// cute('badLine');
+
 var gulp = require('gulp');
 
 var eslint = require('gulp-eslint');
