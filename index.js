@@ -1,7 +1,11 @@
-// TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them
+/* TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions
+ or the arguments objects for calls to them.
+ Keep commented out until the problem is resolved in cute-stack
+ https://github.com/davidmarkclements/cute-stack/issues/8
 // var cute = require('cute-stack');
 // cute.ui.badLine = require('bad-line');
 // cute('badLine');
+*/
 
 var gulp = require('gulp');
 
